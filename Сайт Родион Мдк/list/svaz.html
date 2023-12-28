@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experience+</title>
+    <link rel="stylesheet" href="../css/svaz.css">
+</head>
+<body>
+    <header>
+        <div id="logo">
+            <span><a href="../site.html" class="about-items1" title="Помощь-животным" >Exp+</a></span>
+        </div>
+
+        <div class="navbar">
+          <div class="drop">
+            <button class="nav-btn">&#9776;</button>
+            <div id="about">
+              <a href="organization.html" class="about-items" title="О организации">О организации</a>
+              <a href="sois.html" class="about-items" title="Соискатели">Соискателям</a>
+              <a href="#" class="about-items" title="Работодатели">Работодателям</a>
+              <a href="svaz.html" class="about-items" title="Обратная связь">Обратная связь</a>
+              <a href="log.html" class="about-items" title="Вход/Регистрация">Регистрация</a>
+            </div>
+          </div>
+        </div>
+    </header>
+
+    <div id="top">
+      <h1>Форма обратной связи</h1>
+    
+    
+    <div class="container">
+
+      <div class="content">
+
+        <div class="left-side">
+          <div class="address details">
+
+            <i class="fas fa-map-marker-alt"></i>
+
+            <div class="topic">Адрес</div>
+            <div class="text-one">г. Воронеж</div>
+            <div class="text-one">Травухино ул 5 дом 2</div>
+          </div>
+          <div class="phone details">
+            <i class="fas fa-phone-alt"></i>
+            <div class="topic">Телефон</div>
+            <div class="text-one">8-923-499-08-89</div>
+            <div class="text-one">8-999-648-41-03</div>
+          </div>
+          <div class="email details">
+            <i class="fas fa-envelope"></i>
+            <div class="topic">Email</div>
+            <div class="text-one">tytdolzenbit@gmail.com</div>
+            <div class="text-one">nypotom@yandex.com</div>
+          </div>
+        </div>
+
+        <div class="right-side">
+          <div class="topic-text">Отправьте нам сообщение</div>
+          <p>
+            Если у вас есть какие-то вопросы или предложения по сотрудничеству -
+            заполните форму ниже и мы с вами свяжемся.
+          </p>
+          <form action="arg.php" method="POST">
+            <div class="input-box">
+              <input type="text" name="name" required placeholder="Ваше имя">
+            </div>
+            <div class="input-box">
+              <input type="text" name="email" required placeholder="Введите email">
+            </div>
+            <div class="input-box">
+              <input type="text" name="number" required placeholder="Введите телефон">
+            </div>
+            <div class="input-box message-box">
+              <textarea name="message" required placeholder="Сообщение"></textarea>
+            </div>
+            <div class="button">
+              <input type="submit" value="Отправить">
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    </div>
+        <div class="footer">
+          <span id="year"> 
+                           Поиск-Работы<br>
+            Телефон: +79243920491 Gmail: feksako@gmail.com
+          </span>
+        </div>
+      </div>
+    
+
+    
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <script>
+        function slowScroll(id) {
+          $('html, body').animate({
+            scrollTop: $(id).offset().top
+          }, 500);
+        }
+    
+        $(document).on("scroll", function () {
+          if($(window).scrollTop() === 0)
+            $("header").removeClass("fixed");
+          else
+            $("header").attr("class", "fixed");
+        });
+      </script>
+    </body>
+    </html>

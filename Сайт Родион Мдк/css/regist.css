@@ -1,0 +1,675 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+  }
+  
+  body, html {
+    width: 100%;
+    height: 100%;
+  }
+  
+  body {
+    background-color: #fafafa;
+    font-family: Trebuchet MS, Helvetica;
+  }
+  
+  /* Шапка сайта */
+  
+  header {
+    width: 100%;
+    padding: 10px 0.5% 0px 0.5%;
+    background: transparent;
+    float: left;
+    position: fixed;
+  }
+  
+  header #logo {
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  header #logo span {
+    font-size: 1.7em;
+    line-height: 45px;
+    margin-left: 40px;
+    font-family: 'Suez One', serif;
+  }
+  
+  @media (min-width: 701px) {
+    #logo {
+      float: left;
+      width: 30%;
+      font-size: 1.1em;
+    }
+  
+    #about {
+      float: right;
+      width: 67%;
+    }
+  }
+  
+  @media (max-width: 700px) {
+    #logo {
+      margin-top: 15px;
+      width: 100%;
+      font-size: 1.5em;
+    }
+  
+    #about {
+      float: left;
+      width: 100%;
+    }
+  }
+  
+  #about {
+    text-align: center;
+    font-size: 1em;
+    line-height: 40px;
+    margin-bottom: 10px;
+  }
+  
+  .about-items {
+    text-decoration: none;
+    color: white;
+  }
+  
+  #about > a {color: #ffffff}
+  
+  #about > a:hover {
+    color: #b0b0b0;
+    text-decoration: underline;
+  }
+  
+  #about > a:not(:last-child) {
+    margin-right: 7%;
+  }
+  
+  /* Стили для фиксированной шапки */
+  
+  .fixed {
+    z-index: 5000;
+    background-color: #2a2a2a;
+    
+    border-bottom: 1px solid rgb(0, 0, 0);
+  }
+  
+  header.fixed #logo {
+    color: #ffffff;
+  }
+  
+  .fixed #about a {color: #ffffff}
+  .fixed #about a:hover {color: #7c7c7c}
+  
+  /* Главный блок на сайте */
+  
+  #top {
+    width: 100%;
+    background-image: url(https://funart.pro/uploads/posts/2022-06/1654622415_26-funart-pro-p-bezdomnie-zhivotnie-sobaki-zhivotnie-krasi-38.jpg);
+    background-blend-mode: multiply;
+    background-color: #2e3a44;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+  }
+  
+  #top1 {
+    width: 100%;
+    background-image: url(https://krasivosti.pro/uploads/posts/2021-06/1623496175_57-krasivosti_pro-p-pomoshch-zhivotnim-zhivotnie-krasivo-foto-60.jpg);
+    background-blend-mode: multiply;
+    background-color: #2e3a44;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+  }
+  
+  #top2 {
+    width: 100%;
+    background-image: url(https://krasivosti.pro/uploads/posts/2021-06/1623496175_57-krasivosti_pro-p-pomoshch-zhivotnim-zhivotnie-krasivo-foto-60.jpg);
+    background-blend-mode: multiply;
+    background-color: #2e3a44;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+  }
+  
+  #top3 {
+    width: 100%;
+    background-image: url(https://krasivosti.pro/uploads/posts/2021-06/1623496175_57-krasivosti_pro-p-pomoshch-zhivotnim-zhivotnie-krasivo-foto-60.jpg);
+    background-blend-mode: multiply;
+    background-color: #2e3a44;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+  }
+  
+  #top4 {
+    width: 100%;
+    background-image: url(https://krasivosti.pro/uploads/posts/2021-06/1623496175_57-krasivosti_pro-p-pomoshch-zhivotnim-zhivotnie-krasivo-foto-60.jpg);
+    background-blend-mode: multiply;
+    background-color: #2e3a44;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+  }
+  
+  
+  
+  @media (min-width: 1001px) {
+    #top {
+      font-size: 3em;
+      height: 1000px;
+    }
+    #top1 {
+      font-size: 3em;
+      height: 1000px;
+    }
+    #top2 {
+      font-size: 3em;
+      height: 1000px;
+    }
+    #top3 {
+      font-size: 3em;
+      height: 1000px;
+    }
+    #top4 {
+      font-size: 3em;
+      height: 1000px;
+    }
+  }
+  
+  @media (max-width: 1000px) and (min-width: 651px) {
+    #top {
+      font-size: 2em;
+      height: 600px;
+    }
+    #top1 {
+      font-size: 2em;
+      height: 600px;
+    }
+    #top2 {
+      font-size: 2em;
+      height: 600px;
+    }
+    #top3 {
+      font-size: 2em;
+      height: 600px;
+    }
+    #top4 {
+      font-size: 2em;
+      height: 600px;
+    }
+  }
+  
+  @media (max-width: 650px) {
+    #top {
+      font-size: 1.3em;
+      padding-top: 50%;
+      height: 500px;
+    }
+    #top1 {
+      font-size: 1.3em;
+      padding-top: 50%;
+      height: 500px;
+    }
+    #top2 {
+      font-size: 1.3em;
+      padding-top: 50%;
+      height: 500px;
+    }
+    #top3 {
+      font-size: 1.3em;
+      padding-top: 50%;
+      height: 500px;
+    }
+    #top4 {
+      font-size: 1.3em;
+      padding-top: 50%;
+      height: 500px;
+    }
+  }
+  
+  @media (max-width: 450px) {
+    #top {
+      font-size: 0.9em;
+    }
+    #top1 {
+      font-size: 0.9em;
+    }
+    #top2 {
+      font-size: 0.9em;
+    }
+    #top3 {
+      font-size: 0.9em;
+    }
+    #top4 {
+      font-size: 0.9em;
+    }
+  }
+  
+  #top h1 {
+    padding-top: 20%;
+  }
+  #top1 h1 {
+    padding-top: 20%;
+  }
+  #top2 h1 {
+    padding-top: 20%;
+  }
+  #top3 h1 {
+    padding-top: 20%;
+  }
+  #top4 h1 {
+    padding-top: 20%;
+  }
+  
+  #top h3 {
+    color: #ccc;
+  }
+  #top1 h3 {
+    color: #ccc;
+  }
+  #top2 h3 {
+    color: #ccc;
+  }
+  м
+  #top3 h3 {
+    color: #ccc;
+  }
+  #top4 h3 {
+    color: #ccc;
+  }
+  
+  /* Блок с возможностями */
+  
+  #main {
+    padding: 50px 10%;
+    background-color: #ffffff;
+    border-top: 2px solid silver;
+    color: #484848;
+    font-size: 1.2em;
+    margin-bottom: 7%;
+    border-bottom: black;
+  }
+  
+  #main div {
+    width: 55%;
+    margin-right: 30%;
+    transform: translate(45%, 50%)
+  }
+  
+  .text {
+    margin: 0;
+    margin-bottom: 50px;
+    width: 444px;
+  }
+  
+  .text1 {
+    margin: 0;
+  }
+  
+  #main h2 {font-size: 3em}
+  #main p {color: #404040}
+  
+  /* Блок с преимуществами */
+  
+  #part {
+    float: left;
+    background-image: url(https://images.unsplash.com/1/work-station-straight-on-view.jpg?ixlib=rb-0.3.5&s=d055e15d0b8fd2de7295b726274d312b&dpr=1&auto=format&fit=crop&w=1000&q=80&cs=tinysrgb);
+  
+    background-blend-mode: multiply;
+    background-color: #403f40;
+    background-size: cover;
+    background-attachment: fixed;
+  
+    padding: 100px 0;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+  }
+  
+  #part h2 {font-size: 4em}
+  #part h4 {color: #ccc; font-size: 1.5em}
+  
+  @media (min-width: 561px) {
+    #part h2 {font-size: 4em}
+  }
+  
+  @media (max-width: 560px) {
+    #part h2 {font-size: 2em}
+  }
+  
+  #part .img {
+    float: left;
+    width: 30%;
+    margin-right: 5%;
+    margin-top: 50px;
+  }
+  
+  #part .img:nth-child(odd) {
+    margin-left: 18%;
+  }
+  
+  #part img {
+    background: #fafafa;
+    padding: 5px;
+    border: 2px solid silver;
+    float: left;
+    width: 100%;
+    max-width: 500px;
+  }
+  
+  #part span {
+    float: left;
+    width: 100%;
+    font-size: 2em;
+    margin-top: 10px;
+  }
+  
+  @media (max-width: 700px) {
+    #part .img {
+      width: 80%!important;
+      margin-right: 0!important;
+      margin-left: 10%!important;
+    }
+  }
+  
+  /* Блок с контактами */
+  #contacts {
+    width: 100%;
+    float: left;
+    padding-bottom: 40px;
+    padding-top: 70px;
+    border-top: 4px solid #ccc;
+    background: #f4f4f4;
+  }
+  
+  h1, h2, h3, h4, h5 {
+    font-family: 'Roboto Slab', serif;
+    font-weight: lighter;
+  }
+  
+  #contacts h5 {font-size: 3em; color: #4f4f4f}
+  
+  #form_input {
+    margin-top: 15px;
+    font-size: 1.1em;
+  }
+  
+  @media (min-width: 1051px) {
+    #form_input {
+      width: 35%;
+      margin-left: 38%;
+    }
+  }
+  
+  @media (max-width: 1050px) {
+    #form_input {
+      width: 90%;
+      margin-left: 10%;
+    }
+  }
+  
+  #form_input label {
+    color: #505050;
+    cursor: pointer;
+    font-size: 1.4em;
+    font-family: 'Roboto Slab', serif;
+  }
+  
+  #form_input label > span {
+    color: #e87e7e;
+  }
+  
+  #form_input input,#form_input textarea {
+    margin-bottom: 10px;
+    width: 70%;
+    padding: 10px 2%;
+    border-radius: 7px;
+    border: 2px solid silver;
+    font-size: 0.9em;
+    color: #4a4a4a;
+  }
+  
+  #form_input input:focus, #form_input textarea:focus {
+    border-color: #333;
+  }
+  
+  .btn {
+    float: left;
+    border-radius: 5px;
+    padding: 5px 9px;
+    font-size: 1.2em;
+    background-color: #ec6550;
+    text-shadow: #454545 0 0 2px;
+    cursor: pointer;
+    color: white;
+    font-family: 'Roboto Slab', serif;
+  }
+  
+  .btn:hover {
+    background-color: #c15443;
+  }
+  
+  
+  .footer {
+    position: absolute;
+    bottom: cover;
+    left: 0;
+    right: 0;
+    padding: 2rem;
+    background: #2a2a2a;
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.2rem;
+  }
+  
+  .container {
+    max-width: 1230px;
+    width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+  }
+  
+  .block__title {
+    margin-bottom: 12px;
+    font-size: 50px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+  }
+  
+  .block__title.text-white {
+    color: #fff;
+  }
+  .about {
+    padding: 115px 0;
+    background-color: #171616;
+  }
+  
+  .about__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+  }
+  
+  .about__block {
+    max-width: 505px;
+    font-size: 20px;
+  }
+  
+  .about__text {
+    margin: 35px 0 40px;
+    font-weight: 600;
+    color: #B7B7B7;
+    letter-spacing: 0.23em;
+  }
+  
+  
+  .about__img {
+    height: 360px;
+  }
+  
+  .about-items1 {
+    color: white;
+    text-decoration: none;
+  }
+  .history {
+    margin-top: 150px;
+  }
+  
+  .history-title {
+    font-family: 'Tinos', serif;
+    font-size: 54px;
+    font-weight: 400;
+    width: 444px;
+    text-align: center;
+    margin-top: 21px;
+  }
+  
+  .history-title span {
+    color: #D67E35;
+  }
+  
+  .history-desc {
+    color: #656363;
+    font-size: 16px;
+    width: 444px;
+    text-align: center;
+  }
+  
+  .number-item {
+    margin-right: 60px;
+    text-align: center;
+    font-size: 40px;
+    color: #BC9060;
+  }
+  
+  .number-item span {
+    display: block;
+    color: #000;
+  }
+  
+  
+  .history-holder {
+    display: flex;
+  }
+  
+  .blockeeed {
+    margin: 0px 166px;
+  }
+  
+  .imgages-1 {
+    position: absolute;
+    z-index: 0;
+  }
+  
+  .imgages-2 {
+    position: absolute;
+    z-index: 999;
+  }
+  
+  .imgages-3 {
+    position: absolute;
+    z-index: 999;
+  
+  }
+  
+  .login-page {
+  width: 360px;
+  padding: 8% 0 0;
+  margin: auto;
+}
+.form {
+  position: relative;
+  z-index: 1;
+  background: #FFFFFF;
+  max-width: 360px;
+  margin: 0 auto 100px;
+  padding: 45px;
+  text-align: center;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+.form input {
+  font-family: "Roboto", sans-serif;
+  outline: 0;
+  background: #f2f2f2;
+  width: 100%;
+  border: 0;
+  margin: 0 0 15px;
+  padding: 15px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+.form button {
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  outline: 0;
+  background: #3e2093;
+  width: 100%;
+  border: 0;
+  padding: 15px;
+  color: #FFFFFF;
+  font-size: 14px;
+  -webkit-transition: all 0.3 ease;
+  transition: all 0.3 ease;
+  cursor: pointer;
+}
+.form button:hover,.form button:active,.form button:focus {
+  background: #3e2093;
+}
+.form .message {
+  margin: 15px 0 0;
+  color: #b3b3b3;
+  font-size: 12px;
+}
+.form .message a {
+  color: #4CAF50;
+  text-decoration: none;
+}
+.form .register-form {
+  display: none;
+}
+.container {
+  position: relative;
+  z-index: 1;
+  max-width: 300px;
+  margin: 0 auto;
+}
+.container:before, .container:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.container .info {
+  margin: 50px auto;
+  text-align: center;
+}
+.container .info h1 {
+  margin: 0 0 15px;
+  padding: 0;
+  font-size: 36px;
+  font-weight: 300;
+  color: #1a1a1a;
+}
+.container .info span {
+  color: #4d4d4d;
+  font-size: 12px;
+}
+.container .info span a {
+  color: #000000;
+  text-decoration: none;
+}
+.container .info span .fa {
+  color: #EF3B3A;
+}
+body {
+  background: #76b852; /* fallback for old browsers */
+  background: rgb(141,194,111);
+  background: rgb(126, 126, 126);
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;      
+}
